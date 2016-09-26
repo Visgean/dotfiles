@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+
+source /usr/local/bin/virtualenvwrapper.sh
+cd /home/visgean/p/hranipex
+workon hranipex
+
+sudo service postgresql start
+sudo service redis-server start

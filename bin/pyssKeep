@@ -1,0 +1,3 @@
+#!/bin/bash
+
+python /home/visgean/scripty/pyssKeep/pyssKeep.py $*

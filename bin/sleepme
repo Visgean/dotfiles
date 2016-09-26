@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# sudo visudo
+# visgean ALL=NOPASSWD: /usr/sbin/pm-suspend
+
+sudo pm-suspend &
+
+gnome-screensaver-command -l &
+

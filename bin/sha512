@@ -1,0 +1,8 @@
+#!/usr/bin/python
+
+import hashlib as h
+
+import sys
+
+text = " ".join(sys.argv[1:])
+print h.sha512(text).hexdigest()

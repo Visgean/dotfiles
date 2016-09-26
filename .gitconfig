@@ -1,0 +1,30 @@
+[user]
+	email = me@visgean.me
+	name = Visgean Skeloru
+	signingkey = FC38FE41
+[push]
+	default = simple
+
+[core]
+	autoc=false
+
+
+[alias]
+    changes = diff --name-status -r # zobrazení pouze názvů a stavu změněných souborů
+    dt = difftool
+    fo = fetch origin
+    fu = fetch upstream
+    lg = log --graph --pretty=format:'%Cred%h%Creset %C(bold blue)<%an>%Creset %C(bold green)(%cr)%Creset -%C(bold yellow)%d%Creset %s%Creset' --abbrev-commit --date=relative
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    ls = ls-files
+    rb = rebase
+    rh = reset --hard
+    pr = pull --rebase
+    sur = submodule update --recursive
+    who = shortlog -s -- # kdo udělal kolik commitů
+    undo = reset --hard
+    unstage = reset HEAD --
+
+[commit]
+	gpgsign = true

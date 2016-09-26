@@ -1,0 +1,4 @@
+#!/bin/bash
+
+yes no | ./manage.py syncdb
+./manage.py migrate $*

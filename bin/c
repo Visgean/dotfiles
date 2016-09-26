@@ -1,0 +1,2 @@
+echo "git commit -a"
+git commit -a

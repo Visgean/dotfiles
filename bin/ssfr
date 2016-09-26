@@ -1,0 +1,3 @@
+#!/bin/bash
+
+scp -P 443 $* visgean@regulus:/home/visgean/

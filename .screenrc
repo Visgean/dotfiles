@@ -1,0 +1,10 @@
+hardstatus alwayslastline "%{gk}[%{G}%H%{g}][%=%{wk}%?%-Lw%?%{R}[%{W}%n*%t%?(%u)%?%{R}]%{w}%?%+Lw%?%?%=%{g}][%{B}%d.%m %{G}%c%{g}]"
+
+bindkey "^[[1;2D" prev
+bindkey "^[[1;2C" next
+bindkey "^[[1;2A" screen
+bindkey "^[[1;2B" kill
+
+startup_message off
+
+defscrollback 5000

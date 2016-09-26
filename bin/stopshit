@@ -1,0 +1,12 @@
+sudo service elasticsearch stop
+sudo service postgresql stop
+sudo service postfix stop
+sudo service redis-server stop
+sudo service rabbitmq-server stop
+sudo service memcached stop
+sudo service memcachedb stop
+sudo service nginx stop
+sudo service docker stop
+sudo service docker.io stop
+sudo service mongod stop
+
