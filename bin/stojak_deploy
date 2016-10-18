@@ -1,1 +1,0 @@
-ssh stojak 'cd /home/apps/app_00078/app/restaurator/&&git pull&&source /home/apps/app_00078/venv/bin/activate && ./manage.py migrate'
