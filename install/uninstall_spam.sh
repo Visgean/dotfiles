@@ -17,4 +17,6 @@ sudo apt-get remove zeitgeist-core \
 	unity-lens-photos \
 	unity-lens-music \
 	unity-lens-video \
-	unity-webapps-service
+	unity-webapps-service \
+	gnome-sudoku \
+	aisleriot
