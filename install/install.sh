@@ -15,6 +15,7 @@ sudo apt-get install -y \
 	ddate \
 	vlc \
 	vlc-plugin-vlsub \
-	x264
+	x264 \
+	ghc
 
 sudo apt-get clean
