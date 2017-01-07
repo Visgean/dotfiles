@@ -19,4 +19,33 @@ sudo apt-get remove zeitgeist-core \
 	unity-lens-video \
 	unity-webapps-service \
 	gnome-sudoku \
-	aisleriot
+	aisleriot \
+	gnome-orca
+	brltty \
+	brltty-x11 \
+	gnome-accessibility-themes \
+	mono-common \
+	ttf-arabeyes \
+	ttf-arphic-uming \
+	ttf-indic-fonts-core \
+	ttf-malayalam-fonts \
+	ttf-thai-tlwg \
+	ttf-unfonts-core \
+	espeak \
+	espeak-data \
+	libespeak1 \
+	libgnome-speech7 \
+	evolution-common \
+	evolution-data-server \
+	evolution-plugins \
+	diveintopython3 \
+	example-content \
+	gnome-games \
+	gnome-cards-data \
+	totem \
+	totem-gstreamer \
+	totem-plugins \
+	totem-common
+
+
+sudo apt autoremove
