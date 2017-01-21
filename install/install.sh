@@ -16,6 +16,7 @@ sudo apt-get install -y \
 	vlc \
 	vlc-plugin-vlsub \
 	x264 \
-	ghc
+	ghc \ 
+	compizconfig-settings-manager 
 
 sudo apt-get clean
