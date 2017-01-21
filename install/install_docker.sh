@@ -13,3 +13,4 @@ sudo apt-get -y install docker-engine
 
 sudo pip3 install docker-compose
 
+sudo usermod -aG docker $USER
