@@ -16,7 +16,11 @@ sudo apt-get install -y \
 	vlc \
 	vlc-plugin-vlsub \
 	x264 \
-	ghc \ 
-	compizconfig-settings-manager 
+	ghc \
+	compizconfig-settings-manager \
+	python3-pip \
+	python-pip
 
+sudo apt autoremove -y
+sudo rm -fr /var/cache/apt/archives/apt-fast/
 sudo apt-get clean
