@@ -20,7 +20,8 @@ sudo apt-get install -y \
 	compizconfig-settings-manager \
 	python3-pip \
 	python-pip \
-	seahorse-nautilus
+	seahorse-nautilus \
+	lm-sensors
 
 sudo apt autoremove -y
 sudo rm -fr /var/cache/apt/archives/apt-fast/
