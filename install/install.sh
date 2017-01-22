@@ -19,7 +19,8 @@ sudo apt-get install -y \
 	ghc \
 	compizconfig-settings-manager \
 	python3-pip \
-	python-pip
+	python-pip \
+	seahorse-nautilus
 
 sudo apt autoremove -y
 sudo rm -fr /var/cache/apt/archives/apt-fast/
