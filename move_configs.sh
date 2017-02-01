@@ -4,4 +4,4 @@ cp .screenrc ~
 cp -R .emacs.d/ ~/
 mkdir -p ~/p
 cp -R bin ~/p
-mv user-dirs.dirs ~/.config/
+cp user-dirs.dirs ~/.config/
