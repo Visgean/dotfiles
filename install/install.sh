@@ -21,7 +21,8 @@ sudo apt-get install -y \
 	python3-pip \
 	python-pip \
 	seahorse-nautilus \
-	lm-sensors
+	lm-sensors \
+	unity-tweak-tool
 
 sudo apt autoremove -y
 sudo rm -fr /var/cache/apt/archives/apt-fast/
