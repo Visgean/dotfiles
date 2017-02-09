@@ -119,41 +119,13 @@ alias v.lssitepackages='lssitepackages'
 
 [ $[ $RANDOM % 3] == 0 ] && /usr/bin/ddate  && fortune | cowsay -f $(ls /usr/share/cowsay/cows/ | shuf -n1)
 
-PATH="/usr/local/heroku/bin:$PATH"
-PATH="/home/visgean/bin/android/tools:$PATH"
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/p/
 #source /usr/local/bin/virtualenvwrapper.sh
-
-
-
-### Added by the Heroku Toolbelt
-#export PATH="/usr/local/heroku/bin:$PATH"
-
-export GOOGLE_API_KEY="AIzaSyA-UKuylZOwz94Aq3u5ZSG5tHzPqYKEj9g"
-export GOOGLE_DEFAULT_CLIENT_ID="342562317035-e71vpeh3fr88845jjva07juf6ctsgv4j.apps.googleusercontent.com"
-export GOOGLE_DEFAULT_CLIENT_SECRET="DfpNtKreYvb6XUy_Qz7KJY-t"
-
-
-#source /etc/bash_completion.d/password-store
-
+source ~/.local/bin/virtualenvwrapper.sh
 
 
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=gasp'
 export PATH="$HOME/.local/bin:$PATH"
-#eval "$(rbenv init -)"
-#export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
-# added by Anaconda2 2.4.1 installer
-#export PATH="/home/Depot/bin/anaconda2/bin:$PATH"
-#export NODE_PATH="$HOME/.node_modules"
-
-source ~/.local/bin/virtualenvwrapper.sh
-
-export GOPATH="/home/visgean/p/gocode"
-export PATH="$PATH:$GOPATH/bin"
-
+alias toggl="python2 ~/sbin/toggl-cli/toggl.py"
