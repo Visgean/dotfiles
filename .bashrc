@@ -2,9 +2,6 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-# fix guake bug preventing tmux to load
-export TERM=xterm-256color
-
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
