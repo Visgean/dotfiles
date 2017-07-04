@@ -22,7 +22,9 @@ sudo apt-get install -y \
 	python-pip \
 	seahorse-nautilus \
 	lm-sensors \
-	unity-tweak-tool
+	unity-tweak-tool \
+	libpq-dev \
+	python-dev
 
 sudo apt autoremove -y
 sudo rm -fr /var/cache/apt/archives/apt-fast/
