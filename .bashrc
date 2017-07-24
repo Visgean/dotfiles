@@ -144,9 +144,5 @@ man() {
 
 
 if [ "$TERM" == 'screen' ]; then
-    # export PS1='\[\033k\033\\\]\u@\h:\w\$ '
     export PS1=${PS1}'\[\033k$(dirs +0)\033\\\]'
-
-
-    # export PS1=${PS1}'\[\033k\h\033\\\]'
 fi
