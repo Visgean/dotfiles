@@ -1,3 +1,5 @@
+
+#hardstatus alwayslastline "%{gk}[%{G}%H%{g}][%=%{wk}%?%-Lw%?%{R}[%{W}%t%?(%u)%?%{R}]%{w}%?%+Lw%?%?%=%{g}][%{B}%d.%m %{G}%c%{g}]"
 hardstatus alwayslastline "%{gk}[%{G}%H%{g}][%=%{wk}%?%-Lw%?%{R}[%{W}%n*%t%?(%u)%?%{R}]%{w}%?%+Lw%?%?%=%{g}][%{B}%d.%m %{G}%c%{g}]"
 
 bindkey "^[[1;2D" prev

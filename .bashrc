@@ -124,7 +124,29 @@ export PROJECT_HOME=$HOME/p/
 source ~/.local/bin/virtualenvwrapper.sh
 
 
-export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=gasp'
+#export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=gasp'
 export PATH="$HOME/.local/bin:$PATH"
 
 alias toggl="python2 ~/sbin/toggl-cli/toggl.py"
+
+
+man() {
+    env \
+        LESS_TERMCAP_mb=$(printf "\e[1;31m") \
+        LESS_TERMCAP_md=$(printf "\e[1;31m") \
+        LESS_TERMCAP_me=$(printf "\e[0m") \
+        LESS_TERMCAP_se=$(printf "\e[0m") \
+        LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
+        LESS_TERMCAP_ue=$(printf "\e[0m") \
+        LESS_TERMCAP_us=$(printf "\e[1;32m") \
+            man "$@"
+}
+
+
+if [ "$TERM" == 'screen' ]; then
+    # export PS1='\[\033k\033\\\]\u@\h:\w\$ '
+    export PS1=${PS1}'\[\033k$(dirs +0)\033\\\]'
+
+
+    # export PS1=${PS1}'\[\033k\h\033\\\]'
+fi
