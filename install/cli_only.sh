@@ -1,19 +1,16 @@
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install -y \
-	guake \
-	screen \
+sudo apt update
+sudo apt upgrade
+sudo apt install -y \
 	git-core \
 	htop \
-	steam \
-	xclip \
 	fortune-mod \
 	cowsay \
 	ddate \
-	ghc \
 	python3-pip \
 	python-pip \
+	tmux \
+	libpq-dev \
+	python-dev
 
-sudo apt autoremove -y
-sudo rm -fr /var/cache/apt/archives/apt-fast/
-sudo apt-get clean
+
+sudo apt clean
