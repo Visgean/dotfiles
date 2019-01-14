@@ -19,3 +19,6 @@ sudo apt install -y \
 	python-dev
 
 sudo apt clean
+
+
+pip install --user virtualenvwrapper
