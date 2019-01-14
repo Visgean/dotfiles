@@ -124,10 +124,8 @@ export PROJECT_HOME=$HOME/p/
 source ~/.local/bin/virtualenvwrapper.sh
 
 
-#export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=gasp'
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/p/dotfiles/bin:$PATH"
 
-alias toggl="python2 ~/sbin/toggl-cli/toggl.py"
 
 
 man() {

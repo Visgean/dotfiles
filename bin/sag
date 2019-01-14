@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo apt-fast upgrade $*
+sudo apt upgrade $*

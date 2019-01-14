@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo apt-fast remove $*
+sudo apt remove $*

@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo apt-fast update $*
+sudo apt update $*
