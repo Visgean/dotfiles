@@ -1,12 +1,10 @@
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install -y \
-	guake \
-	screen \
+sudo apt update
+sudo apt upgrade
+sudo apt install -y \
+	tmux \
+	tilda \
 	git-core \
 	htop \
-	steam \
-	indicator-multiload \
 	xclip \
 	redshift \
 	synaptic \
@@ -14,18 +12,10 @@ sudo apt-get install -y \
 	cowsay \
 	ddate \
 	vlc \
-	vlc-plugin-vlsub \
-	x264 \
-	ghc \
-	compizconfig-settings-manager \
 	python3-pip \
 	python-pip \
-	seahorse-nautilus \
 	lm-sensors \
-	unity-tweak-tool \
 	libpq-dev \
 	python-dev
 
-sudo apt autoremove -y
-sudo rm -fr /var/cache/apt/archives/apt-fast/
-sudo apt-get clean
+sudo apt clean
