@@ -11,7 +11,8 @@ sudo apt install -y \
 	tmux \
 	libpq-dev \
 	python-dev \
-	bash-completion
+	bash-completion \
+	gnupg2
 
 
 sudo apt clean
