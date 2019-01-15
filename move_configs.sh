@@ -1,9 +1,7 @@
-cp .bashrc ~
-cp .gitconfig ~
-cp .screenrc ~
-cp -R .emacs.d/ ~/
-mkdir -p ~/p
-cp -R bin ~/p
-cp user-dirs.dirs ~/.config/
+cp configs/bashrc ~/.bashrc
+cp configs/gitconfig ~/.gitconfig
+cp configs/screenrc ~/.screenrc
+cp configs/user-dirs.dirs ~/.config/
+cp configs/tmux.conf ~/.tmux.conf
 
-cp tmux.conf ~/.tmux.conf
+mkdir -p ~/p
