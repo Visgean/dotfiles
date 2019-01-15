@@ -10,7 +10,8 @@ sudo apt install -y \
 	python-pip \
 	tmux \
 	libpq-dev \
-	python-dev
+	python-dev \
+	bash-completion
 
 
 sudo apt clean
