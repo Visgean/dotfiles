@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo cpufreq-set -r -g powersave
+sudo smbios-thermal-ctl --set-thermal-mode quiet
