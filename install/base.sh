@@ -1,3 +1,6 @@
+#!/bin/sh
+
+
 sudo apt update
 sudo apt upgrade
 sudo apt install -y \
@@ -8,13 +11,12 @@ sudo apt install -y \
 	vlc \
 	lm-sensors \
 	smbios-utils \
-	cpufrequtils
+	cpufrequtils \
+	pm-utils \
+	dconf-tools
 
 
 sudo apt clean
 
-# install cli tools
-bash cli_only.sh
 pip install --user virtualenvwrapper
 
-gsettings set org.gnome.desktop.interface enable-animations false

@@ -1,3 +1,6 @@
+#!/bin/sh
+
+
 cp configs/bashrc ~/.bashrc
 cp configs/gitconfig ~/.gitconfig
 cp configs/screenrc ~/.screenrc
