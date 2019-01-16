@@ -12,7 +12,8 @@ sudo apt install -y \
 	libpq-dev \
 	python-dev \
 	bash-completion \
-	gnupg2
+	gnupg2 \
+	scdaemon
 
 
 sudo apt clean
