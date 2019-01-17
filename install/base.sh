@@ -13,10 +13,14 @@ sudo apt install -y \
 	smbios-utils \
 	cpufrequtils \
 	pm-utils \
-	dconf-tools
+	dconf-tools \
+	exfat-fuse \
+	exfat-utils
+
 
 
 sudo apt clean
 
 pip install --user virtualenvwrapper
+pip3 install --user ipython
 
