@@ -1,2 +1,8 @@
 #!/bin/bash
+
+echo "$ apt-cache search: $*"
 apt-cache search $*
+
+echo
+echo "$ apt-cache madison: $*"
+apt-cache madison $*
