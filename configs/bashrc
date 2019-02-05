@@ -144,3 +144,5 @@ man() {
 if [ "$TERM" == 'screen' ]; then
     export PS1=${PS1}'\[\033k$(dirs +0)\033\\\]'
 fi
+
+eval "$(direnv hook bash)"

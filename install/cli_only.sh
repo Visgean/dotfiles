@@ -13,7 +13,8 @@ sudo apt install -y \
 	python-dev \
 	bash-completion \
 	gnupg2 \
-	scdaemon
+	scdaemon \
+	direnv
 
 
 sudo apt clean
