@@ -3,6 +3,7 @@
 from PyPDF2 import PdfFileReader
 from slugify import slugify
 from pathlib import Path
+import pdftotext
 
 import argparse
 import shutil
@@ -10,30 +11,57 @@ import shutil
 
 
 def get_new_name(filename):
-    pdf_toread = PdfFileReader(open(filename, "rb"))
+    try:
+        pdf_toread = PdfFileReader(open(filename, "rb"))
+    except:
+        return
     pdf_info = pdf_toread.getDocumentInfo()
 
-    name = pdf_info['/Title']
+    name = pdf_info.get('/Title')
+    if not name:
+        return 
+
     new_name = slugify(name)
 
     if not new_name:
-        return None
+        return 
 
     if not new_name.endswith(".pdf"):
         new_name += ".pdf"
     return new_name
 
 
+def extract_from_title(filename):
+    with open(filename, "rb") as f:
+        try:
+            pdf = pdftotext.PDF(f)
+        except:
+            return
+
+    try:
+        text = pdf[0][:64].splitlines()[0]
+        new_name = slugify(text)
+        return new_name + ".pdf"
+    except:
+        return
+
+
+
 info = """
 Renames all whacky PDF named files to a bit better form.
 
-Pre-requisites: pip3 install python-slugify PyPDF2 --user
+Pre-requisites: 
+
+pip3 install pdftotext python-slugify PyPDF2 --user
+sudo apt-get install build-essential libpoppler-cpp-dev pkg-config python-dev
+
 
 """
 
 parser = argparse.ArgumentParser(description=info)
 parser.add_argument('pdfs',  nargs='+', help='list of filenames to rename')
-parser.add_argument('--dry', dest='dry', action='store_true', help='dry-run')
+parser.add_argument('--rename', dest='rename', action='store_true', help='rename-run')
+parser.add_argument('--from_text', dest='from_text', action='store_true', help='extract new name from text')
 
 args = parser.parse_args()
 
@@ -41,14 +69,20 @@ for filename in args.pdfs:
     abs_path = Path(filename).resolve()
     base_dir = abs_path.parent
 
-    new  = get_new_name(filename)
+    if args.from_text:
+        new = extract_from_title(filename)
+    else:
+        new  = get_new_name(filename)
+    
+
+
     if new is None:
         print(f"Skipping {filename}, metadata empty")
         continue
 
     print(f"Original {filename}, new name: {new}")
 
-    if args.dry:
+    if not args.rename:
         continue
 
     new_abs_path = base_dir / Path(new)
