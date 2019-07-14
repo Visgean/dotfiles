@@ -1,0 +1,4 @@
+#!/bin/bash
+clear
+
+mdless ~/Dropbox/info.md -P -w 60 | sed 's/^/\t\t/'
