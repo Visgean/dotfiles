@@ -116,7 +116,7 @@ alias v.lssitepackages='lssitepackages'
 
 
 
-[ $[ $RANDOM % 3] == 0 ] && /usr/bin/ddate  && fortune | cowsay -f $(ls /usr/share/cowsay/cows/ | shuf -n1)
+[ $[ $RANDOM % 3] == 0 ] && /usr/bin/ddate  && fortune | cowsay -f $(ls /usr/share/cowsay/cows/ | shuf -n1) | lolcat
 
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/p/

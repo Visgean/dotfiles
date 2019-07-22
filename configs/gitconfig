@@ -1,13 +1,13 @@
 [user]
 	email = me@visgean.me
-	name = Visgean Skeloru
+	name = Martin
 	#signingkey = FC38FE41
 [push]
 	default = simple
 
 [core]
 	autoc=false
-
+        excludesfile = /home/visgean/.gitignore
 
 [alias]
     changes = diff --name-status -r # zobrazení pouze názvů a stavu změněných souborů
@@ -25,6 +25,7 @@
     who = shortlog -s -- # kdo udělal kolik commitů
     undo = reset --hard
     unstage = reset HEAD --
+    publish = !git push -u origin $(git branch-name)
 
 [commit]
 	gpgsign = false
