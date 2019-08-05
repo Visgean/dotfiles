@@ -7,6 +7,14 @@ Most amazing dot files you have ever seen, I mean look at these dots.
 - My notes on using XPS laptop with Linux: [this notion page](https://www.notion.so/visgean/XPS-setup-5d97d249b6454fe69cc56c430ea81cf7)
 
 
+# Desktop setup:
+
+
+```
+bash ./install-desktop.sh
+```
+
+
 # New digital ocean server:
 
 create user:
@@ -51,18 +59,7 @@ mkdir p && cd p
 git clone https://github.com/Visgean/dotfiles.git
 
 cd dotfiles
-bash ./move_configs.sh
+bash ./install-server.sh
 bash ./install/cli_only.sh
 
-```
-
-# Firewall:
-
-```
-sudo ufw allow ssh
-sudo ufw allow http
-sudo ufw allow https
-
-sudo ufw default deny
-sudo ufw enable
 ```

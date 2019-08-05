@@ -4,6 +4,9 @@
 bash ./install/cli_only.sh
 bash ./install/base.sh
 
+bash ./install/firewall-desktop.sh
+
+
 bash ./load_dconf.sh
 bash ./move_configs.sh
 bash ./install/spotify.sh
