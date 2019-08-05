@@ -2,10 +2,6 @@
 
 Most amazing dot files you have ever seen, I mean look at these dots. 
 
-# Productivity crontab:
-
-see [this gist](https://gist.github.com/Visgean/28f57140b04d25771c4e1f5f0f301dc4)
-
 # Dell XPS 9570 notes
 
 - My notes on using XPS laptop with Linux: [this notion page](https://www.notion.so/visgean/XPS-setup-5d97d249b6454fe69cc56c430ea81cf7)
@@ -47,7 +43,7 @@ sudo systemctl reload ssh
 
 this will kick me out of root forever.
 
-# Using 
+# Setup colors:  
 
 ```
 mkdir ~/.config
@@ -58,4 +54,15 @@ cd dotfiles
 bash ./move_configs.sh
 bash ./install/cli_only.sh
 
+```
+
+# Firewall:
+
+```
+sudo ufw allow ssh
+sudo ufw allow http
+sudo ufw allow https
+
+sudo ufw default deny
+sudo ufw enable
 ```
