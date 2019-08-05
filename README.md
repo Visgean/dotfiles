@@ -2,7 +2,7 @@
 
 Most amazing dot files you have ever seen, I mean look at these dots. 
 
-# Dell XPS 9570 notes
+## Dell XPS 9570 notes
 
 - My notes on using XPS laptop with Linux: [this notion page](https://www.notion.so/visgean/XPS-setup-5d97d249b6454fe69cc56c430ea81cf7)
 
@@ -51,7 +51,7 @@ sudo systemctl reload ssh
 
 this will kick me out of root forever.
 
-# Setup colors:  
+## Setup colors:  
 
 ```
 mkdir ~/.config
