@@ -14,7 +14,13 @@ sudo apt install -y \
 	bash-completion \
 	gnupg2 \
 	scdaemon \
-	direnv
+	direnv \
+	lolcat
 
 
 sudo apt clean
+
+pip install --user virtualenvwrapper
+pip3 install --user ipython
+
+pip3 install --user -r install/python-packages
