@@ -23,4 +23,3 @@ sudo apt clean
 pip install --user virtualenvwrapper
 pip3 install --user ipython
 
-pip3 install --user -r install/python-packages

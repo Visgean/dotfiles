@@ -21,3 +21,4 @@ sudo apt install -y \
 
 sudo apt clean
 
+pip3 install --user -r install/python-packages
