@@ -1,9 +1,0 @@
-#!/bin/bash
-
-IMAGE_FILE="/home/visgean/.random_unsplash"
-IMAGE_FILE_TMP="/home/visgean/.random_unsplash_download"
-
-wget https://source.unsplash.com/random/1920x1080 -O $IMAGE_FILE_TMP
-mv $IMAGE_FILE_TMP $IMAGE_FILE
-
-gsettings set org.gnome.desktop.background picture-uri file://$IMAGE_FILE

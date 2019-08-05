@@ -1,6 +1,0 @@
-#!/bin/bash
-
-## Mixer Volume Range (min=0 max=64);
-## you must convert Vol. in % to 0-64 mixer volume range
-mixerVol=$(($1*64/100))
-amixer cset iface=MIXER,name="Master Playback Volume" $mixerVol >/dev/null
