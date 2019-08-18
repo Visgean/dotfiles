@@ -14,7 +14,8 @@ sudo apt install -y \
 	bash-completion \
 	gnupg2 \
 	scdaemon \
-	direnv
+	direnv \
+	lolcat
 
 
 sudo apt clean

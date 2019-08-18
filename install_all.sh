@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # install cli tools
-bash ./cli_only.sh
+bash ./install/cli_only.sh
 bash ./install/base.sh
 
 bash ./load_dconf.sh
