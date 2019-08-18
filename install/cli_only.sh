@@ -19,3 +19,7 @@ sudo apt install -y \
 
 
 sudo apt clean
+
+pip install --user virtualenvwrapper
+pip3 install --user ipython
+

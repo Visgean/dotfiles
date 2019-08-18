@@ -1,0 +1,4 @@
+#!/bin/bash
+
+rm ~/.dropbox-dist/dropbox-lnx*/images/emblems/emblem-dropbox-uptodate.png
+

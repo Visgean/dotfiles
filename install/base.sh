@@ -21,7 +21,9 @@ sudo apt install -y \
 
 sudo apt clean
 
+
 pip3 install --user virtualenvwrapper
 pip3 install --user ipython
 
 sudo snap install sublime-text --classic
+
