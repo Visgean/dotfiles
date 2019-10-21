@@ -124,8 +124,9 @@ export PROJECT_HOME=$HOME/p/
 source ~/.local/bin/virtualenvwrapper.sh
 
 
-export PATH="$HOME/.local/bin:$HOME/bin/commands:$HOME/p/dotfiles/bin:$HOME/node_modules/.bin/:$HOME/.gems/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/bin/commands:$HOME/p/dotfiles/bin:$HOME/node_modules/.bin/:$HOME/.gems/bin::$HOME/.go/bin:$PATH"
 
+export GOPATH=$HOME/.go
 
 
 man() {
