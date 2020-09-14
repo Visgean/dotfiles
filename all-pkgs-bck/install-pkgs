@@ -1,0 +1,6 @@
+# see this: https://unix.stackexchange.com/questions/190853/backup-and-restore-list-of-installed-packages-and-apt-sources
+
+dpkg --merge-avail <(apt-cache dumpavail)
+dpkg --clear-selections
+dpkg --set-selections < packages.lst
+apt-get dselect-upgrade
