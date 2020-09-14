@@ -22,4 +22,5 @@ sudo apt clean
 
 pip install --user virtualenvwrapper
 pip3 install --user ipython
+sudo snap install mdless   
 
