@@ -100,22 +100,6 @@ if [ -d "$HOME/p/bin" ] ; then
 fi
 
 
-
-
-alias v='workon'
-alias v.deactivate='deactivate'
-alias v.mk='mkvirtualenv --no-site-packages'
-alias v.mk_withsitepackages='mkvirtualenv'
-alias v.rm='rmvirtualenv'
-alias v.switch='workon'
-alias v.add2virtualenv='add2virtualenv'
-alias v.cdsitepackages='cdsitepackages'
-alias v.cd='cdvirtualenv'
-alias v.lssitepackages='lssitepackages'
-
-
-
-
 # [ $[ $RANDOM % 3] == 0 ] && /usr/bin/ddate  && fortune | cowsay -f $(ls /usr/share/cowsay/cows/ | shuf -n1) | lolcat
 
 export WORKON_HOME=$HOME/.virtualenvs
@@ -168,6 +152,7 @@ unset __conda_setup
 
 
 alias cat='bat'
+alias tmux-reload='tmux source-file ~/.tmux.conf'
 
 
 cal -y 
