@@ -154,6 +154,7 @@ unset __conda_setup
 alias cat='bat'
 alias tmux-reload='tmux source-file ~/.tmux.conf'
 
+alias t='teamocil'
 
 cal -y 
 
