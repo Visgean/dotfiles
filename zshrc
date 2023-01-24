@@ -119,7 +119,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 
 
-source  /Users/visgean/Library/Python/3.9/bin/virtualenvwrapper.sh
+# source  /Users/visgean/Library/Python/3.9/bin/virtualenvwrapper.sh
 
 
 export VISUAL=nano
@@ -129,6 +129,15 @@ export EDITOR="$VISUAL"
 
 eval "$(direnv hook zsh)"
 
+
+
+
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/visgean/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/visgean/bin/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/visgean/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/visgean/bin/google-cloud-sdk/completion.zsh.inc'; fi
 
 
 
@@ -148,8 +157,12 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/visgean/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/visgean/bin/google-cloud-sdk/path.zsh.inc'; fi
+export PATH="/Users/visgean/miniconda3/bin:$PATH"
 
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/visgean/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/visgean/bin/google-cloud-sdk/completion.zsh.inc'; fi
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH="$HOME/.poetry/bin:$PATH"
+
+source /Users/visgean/.docker/init-zsh.sh || true # Added by Docker Desktop

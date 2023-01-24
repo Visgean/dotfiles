@@ -51,7 +51,7 @@ sudo systemctl reload ssh
 
 this will kick me out of root forever.
 
-## Setup colors:  
+## Server setup:  
 
 ```
 mkdir ~/.config
