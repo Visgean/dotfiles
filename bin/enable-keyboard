@@ -1,4 +1,0 @@
-#!/bin/bash
-
-xinput set-prop "11" "Device Enabled" 1  # Sets touchpad to active
-xinput set-prop "14" "Device Enabled" 1  # Sets keyboard to active

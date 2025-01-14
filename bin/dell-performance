@@ -1,4 +1,0 @@
-#!/bin/bash
-
-sudo cpufreq-set -r -g performance
-sudo smbios-thermal-ctl --set-thermal-mode performance

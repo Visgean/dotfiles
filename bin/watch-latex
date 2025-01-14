@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-mkdir -p pdfs/
-
-while inotifywait -e close_write *.tex; 
-	do pdflatex -halt-on-error -output-directory pdfs/  main.tex 
-done

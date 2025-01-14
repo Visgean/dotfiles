@@ -1,7 +1,0 @@
-#!/bin/bash
-
-IMAGE_FILE=$(find ~/Dropbox/Photos/public -type f -print0 -name "*.jpg" | shuf -zn1 | xargs -0 ls)
-
-echo $IMAGE_FILE
-
-gsettings set org.gnome.desktop.background picture-uri "file://$IMAGE_FILE"

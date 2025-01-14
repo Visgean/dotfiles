@@ -1,4 +1,0 @@
-#!/bin/bash
-
-pirate-get -c "Video/HD - TV shows" $*
-
