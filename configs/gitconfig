@@ -1,13 +1,15 @@
 [user]
-	email = me@visgean.me
-	name = Martin
+	email = Visgean@gmail.com
+	name = martin
 	#signingkey = FC38FE41
 [push]
 	default = simple
+	autoSetupRemote = true
 
 [core]
 	autoc=false
-        excludesfile = /home/visgean/.gitignore
+	excludesFile = ~/.gitignore
+	autocrlf = input
 
 [alias]
     changes = diff --name-status -r # zobrazení pouze názvů a stavu změněných souborů
@@ -29,3 +31,8 @@
 
 [commit]
 	gpgsign = false
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f

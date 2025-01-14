@@ -4,4 +4,4 @@
 
 clear
 
-mdless ~/Dropbox/info.md -P -w 60 | sed 's/^/\t\t/'
+mdless ~/Dropbox/Official/info.md -P -w 60 | sed 's/^/\t\t/'
